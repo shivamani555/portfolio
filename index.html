@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
 <meta charset="UTF-8">
@@ -8,7 +9,6 @@
 <title>Sripada Shivamani | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <style>
@@ -35,6 +35,10 @@ padding:20px 8%;
 background:#020617;
 }
 
+nav h2{
+color:#38bdf8;
+}
+
 nav a{
 color:white;
 margin-left:20px;
@@ -44,20 +48,12 @@ text-decoration:none;
 /* HERO */
 
 .hero{
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px 10%;
-flex-wrap:wrap;
-}
-
-.hero-text{
-max-width:500px;
+text-align:center;
+padding:100px 20px;
 }
 
 .hero h1{
-font-size:42px;
-margin-bottom:10px;
+font-size:45px;
 }
 
 .highlight{
@@ -65,28 +61,19 @@ color:#38bdf8;
 }
 
 .hero p{
+margin-top:15px;
 color:#cbd5f5;
-margin:15px 0;
 }
-
-.hero img{
-width:260px;
-border-radius:50%;
-border:4px solid #38bdf8;
-}
-
-/* BUTTON */
 
 .btn{
 display:inline-block;
-margin-top:15px;
+margin:15px 10px;
 padding:12px 25px;
 background:#38bdf8;
 color:black;
 border-radius:25px;
 text-decoration:none;
 font-weight:600;
-margin-right:10px;
 }
 
 /* SECTION */
@@ -99,6 +86,15 @@ padding:70px 10%;
 text-align:center;
 margin-bottom:40px;
 color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about{
+max-width:700px;
+margin:auto;
+text-align:center;
+color:#cbd5f5;
 }
 
 /* SKILLS */
@@ -183,25 +179,17 @@ color:#94a3b8;
 
 <section class="hero">
 
-<div class="hero-text">
-
 <h1>Hi, I'm <span class="highlight">Sripada Shivamani</span></h1>
 
-<h3><span id="typing"></span></h3>
+<h3 id="typing"></h3>
 
 <p>
-B.Tech student passionate about programming, AI, and building useful software solutions.
+B.Tech student passionate about programming, AI, and building real world software solutions.
 </p>
 
 <a class="btn" href="https://shivamani555.github.io/portfolio/">Portfolio</a>
-
 <a class="btn" href="https://github.com/shivamani555">GitHub</a>
-
-<a class="btn" href="#">Download Resume</a>
-
-</div>
-
-<img src="https://via.placeholder.com/300" alt="profile">
+<a class="btn" href="https://linkedin.com/in/sripada-shivamani">LinkedIn</a>
 
 </section>
 
@@ -209,10 +197,11 @@ B.Tech student passionate about programming, AI, and building useful software so
 
 <h2>About Me</h2>
 
-<p style="text-align:center;max-width:700px;margin:auto;color:#cbd5f5;">
+<p class="about">
 
-I am a B.Tech student at Vignan Institute of Technology and Science with strong interest in software development, AI, and data science.  
-I enjoy solving problems, building real world applications and continuously improving my technical skills.
+I am currently pursuing B.Tech at Vignan Institute of Technology and Science with a CGPA of 7.3.  
+My interests include software development, AI systems, and data science.  
+I enjoy building projects that solve real problems and continuously improving my technical skills.
 
 </p>
 
@@ -234,6 +223,7 @@ I enjoy solving problems, building real world applications and continuously impr
 <div class="skill">MySQL</div>
 <div class="skill">Git</div>
 <div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
 
 </div>
 
@@ -248,21 +238,21 @@ I enjoy solving problems, building real world applications and continuously impr
 <div class="project">
 <h3>AI Resume Builder</h3>
 <p>
-A smart tool that helps users generate professional resumes automatically using AI.
+A tool that generates professional resumes automatically using AI.
 </p>
 </div>
 
 <div class="project">
 <h3>Fitness AI Chatbot</h3>
 <p>
-Chatbot that provides workout and diet suggestions using AI conversation models.
+AI chatbot that provides diet plans and workout suggestions.
 </p>
 </div>
 
 <div class="project">
 <h3>Student Attendance System</h3>
 <p>
-A digital system to manage student attendance using secure faculty authentication.
+Digital attendance system that allows faculty to mark student attendance securely.
 </p>
 </div>
 
@@ -275,12 +265,8 @@ A digital system to manage student attendance using secure faculty authenticatio
 <h2>Contact</h2>
 
 <a href="mailto:nikkhil2005@gmail.com">Email</a>
-
 <a href="https://github.com/shivamani555">GitHub</a>
-
 <a href="https://linkedin.com/in/sripada-shivamani">LinkedIn</a>
-
-<a href="https://shivamani555.github.io/portfolio/">Portfolio Link</a>
 
 </section>
 
@@ -292,12 +278,12 @@ A digital system to manage student attendance using secure faculty authenticatio
 
 <script>
 
-var typed = new Typed("#typing",{
-strings:["Python Developer","AI Enthusiast","Web Developer"],
-typeSpeed:60,
-backSpeed:40,
-loop:true
-})
+var typed = new Typed("#typing", {
+strings: ["Python Developer", "AI Enthusiast", "Web Developer"],
+typeSpeed: 60,
+backSpeed: 40,
+loop: true
+});
 
 </script>
 
