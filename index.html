@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sripada Shivamani | Portfolio</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <style>
 
@@ -13,13 +17,12 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Poppins, sans-serif;
+font-family:Poppins;
 }
 
 body{
 background:#0f172a;
 color:white;
-line-height:1.6;
 }
 
 /* NAVBAR */
@@ -30,66 +33,60 @@ justify-content:space-between;
 align-items:center;
 padding:20px 8%;
 background:#020617;
-position:sticky;
-top:0;
-}
-
-nav h2{
-color:#38bdf8;
 }
 
 nav a{
 color:white;
-text-decoration:none;
 margin-left:20px;
-transition:0.3s;
-}
-
-nav a:hover{
-color:#38bdf8;
+text-decoration:none;
 }
 
 /* HERO */
 
 .hero{
-height:90vh;
 display:flex;
-flex-direction:column;
-justify-content:center;
 align-items:center;
-text-align:center;
-padding:20px;
+justify-content:space-between;
+padding:80px 10%;
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
 }
 
 .hero h1{
-font-size:50px;
+font-size:42px;
 margin-bottom:10px;
 }
 
-.hero span{
+.highlight{
 color:#38bdf8;
 }
 
 .hero p{
 color:#cbd5f5;
-max-width:600px;
-margin:15px auto;
+margin:15px 0;
 }
+
+.hero img{
+width:260px;
+border-radius:50%;
+border:4px solid #38bdf8;
+}
+
+/* BUTTON */
 
 .btn{
 display:inline-block;
-margin-top:20px;
-padding:12px 28px;
+margin-top:15px;
+padding:12px 25px;
 background:#38bdf8;
 color:black;
-border-radius:30px;
+border-radius:25px;
 text-decoration:none;
 font-weight:600;
-transition:0.3s;
-}
-
-.btn:hover{
-transform:scale(1.05);
+margin-right:10px;
 }
 
 /* SECTION */
@@ -104,15 +101,6 @@ margin-bottom:40px;
 color:#38bdf8;
 }
 
-/* ABOUT */
-
-.about{
-max-width:800px;
-margin:auto;
-text-align:center;
-color:#cbd5f5;
-}
-
 /* SKILLS */
 
 .skills{
@@ -124,46 +112,29 @@ gap:15px;
 
 .skill{
 background:#1e293b;
-padding:12px 20px;
-border-radius:8px;
-transition:0.3s;
+padding:10px 18px;
+border-radius:6px;
 }
 
-.skill:hover{
-background:#38bdf8;
-color:black;
-transform:translateY(-5px);
-}
-
-/* PROJECT */
+/* PROJECTS */
 
 .projects{
 display:flex;
+flex-wrap:wrap;
 justify-content:center;
+gap:25px;
 }
 
 .project{
 background:#1e293b;
-padding:25px;
+padding:20px;
 border-radius:10px;
-max-width:400px;
+width:280px;
 transition:0.3s;
 }
 
 .project:hover{
-transform:translateY(-10px);
-}
-
-/* CERTIFICATIONS */
-
-.cert{
-max-width:600px;
-margin:auto;
-color:#cbd5f5;
-}
-
-.cert li{
-margin:10px 0;
+transform:translateY(-8px);
 }
 
 /* CONTACT */
@@ -175,22 +146,12 @@ text-align:center;
 .contact a{
 display:inline-block;
 margin:10px;
-color:white;
-text-decoration:none;
 padding:10px 20px;
 border:1px solid #38bdf8;
-border-radius:30px;
-transition:0.3s;
+border-radius:20px;
+text-decoration:none;
+color:white;
 }
-
-.contact a:hover{
-background:#38bdf8;
-color:black;
-}
-
-<a class="btn" href="https://shivamani555.github.io/portfolio/" target="_blank">
-View My Portfolio
-</a>
 
 /* FOOTER */
 
@@ -198,16 +159,17 @@ footer{
 text-align:center;
 padding:20px;
 background:#020617;
-margin-top:40px;
 color:#94a3b8;
 }
 
 </style>
+
 </head>
 
 <body>
 
 <nav>
+
 <h2>Shivamani</h2>
 
 <div>
@@ -216,18 +178,30 @@ color:#94a3b8;
 <a href="#projects">Projects</a>
 <a href="#contact">Contact</a>
 </div>
+
 </nav>
 
 <section class="hero">
 
-<h1>Hi, I'm <span>Sripada Shivamani</span></h1>
+<div class="hero-text">
+
+<h1>Hi, I'm <span class="highlight">Sripada Shivamani</span></h1>
+
+<h3><span id="typing"></span></h3>
 
 <p>
-B.Tech student passionate about programming, web development and data science.
-I enjoy solving problems, building projects and continuously learning new technologies.
+B.Tech student passionate about programming, AI, and building useful software solutions.
 </p>
 
-<a class="btn" href="mailto:nikkhil2005@gmail.com">Contact Me</a>
+<a class="btn" href="https://shivamani555.github.io/portfolio/">Portfolio</a>
+
+<a class="btn" href="https://github.com/shivamani555">GitHub</a>
+
+<a class="btn" href="#">Download Resume</a>
+
+</div>
+
+<img src="https://via.placeholder.com/300" alt="profile">
 
 </section>
 
@@ -235,10 +209,11 @@ I enjoy solving problems, building projects and continuously learning new techno
 
 <h2>About Me</h2>
 
-<p class="about">
-I am currently pursuing B.Tech at Vignan Institute of Technology and Science with a CGPA of 7.3.  
-My interests lie in software development, data science and building practical solutions using programming.  
-I enjoy learning new technologies and improving my problem solving skills.
+<p style="text-align:center;max-width:700px;margin:auto;color:#cbd5f5;">
+
+I am a B.Tech student at Vignan Institute of Technology and Science with strong interest in software development, AI, and data science.  
+I enjoy solving problems, building real world applications and continuously improving my technical skills.
+
 </p>
 
 </section>
@@ -251,15 +226,14 @@ I enjoy learning new technologies and improving my problem solving skills.
 
 <div class="skill">Python</div>
 <div class="skill">C</div>
-<div class="skill">Java (Basic)</div>
-<div class="skill">HTML5</div>
-<div class="skill">CSS3</div>
+<div class="skill">Java</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
 <div class="skill">NumPy</div>
 <div class="skill">Pandas</div>
 <div class="skill">MySQL</div>
 <div class="skill">Git</div>
 <div class="skill">GitHub</div>
-<div class="skill">VS Code</div>
 
 </div>
 
@@ -272,47 +246,60 @@ I enjoy learning new technologies and improving my problem solving skills.
 <div class="projects">
 
 <div class="project">
-<h3>Personal Portfolio Website</h3>
-
+<h3>AI Resume Builder</h3>
 <p>
-Developed a responsive portfolio website using HTML and CSS to showcase my skills, certifications and projects. Implemented mobile responsive design and managed the project using GitHub.
+A smart tool that helps users generate professional resumes automatically using AI.
 </p>
+</div>
 
+<div class="project">
+<h3>Fitness AI Chatbot</h3>
+<p>
+Chatbot that provides workout and diet suggestions using AI conversation models.
+</p>
+</div>
+
+<div class="project">
+<h3>Student Attendance System</h3>
+<p>
+A digital system to manage student attendance using secure faculty authentication.
+</p>
 </div>
 
 </div>
-
-</section>
-
-<section class="section">
-
-<h2>Certifications</h2>
-
-<ul class="cert">
-
-<li>Python Certification – HackerRank</li>
-<li>SQL Basics – HackerRank</li>
-<li>SQL Course – Simplilearn</li>
-<li>DevOps Workshop – Vignan Institute</li>
-
-</ul>
 
 </section>
 
 <section class="section contact" id="contact">
 
-<h2>Connect With Me</h2>
+<h2>Contact</h2>
 
 <a href="mailto:nikkhil2005@gmail.com">Email</a>
+
 <a href="https://github.com/shivamani555">GitHub</a>
+
 <a href="https://linkedin.com/in/sripada-shivamani">LinkedIn</a>
+
+<a href="https://shivamani555.github.io/portfolio/">Portfolio Link</a>
 
 </section>
 
 <footer>
+
 <p>© 2026 Sripada Shivamani</p>
+
 </footer>
 
-</body>
+<script>
 
+var typed = new Typed("#typing",{
+strings:["Python Developer","AI Enthusiast","Web Developer"],
+typeSpeed:60,
+backSpeed:40,
+loop:true
+})
+
+</script>
+
+</body>
 </html>
