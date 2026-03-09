@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sripada Shivamani | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins, sans-serif;
+}
+
+body{
+background:#0f172a;
+color:white;
+line-height:1.6;
+}
+
+/* NAVBAR */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#020617;
+position:sticky;
+top:0;
+}
+
+nav h2{
+color:#38bdf8;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero h1{
+font-size:50px;
+margin-bottom:10px;
+}
+
+.hero span{
+color:#38bdf8;
+}
+
+.hero p{
+color:#cbd5f5;
+max-width:600px;
+margin:15px auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 28px;
+background:#38bdf8;
+color:black;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.05);
+}
+
+/* SECTION */
+
+.section{
+padding:70px 10%;
+}
+
+.section h2{
+text-align:center;
+margin-bottom:40px;
+color:#38bdf8;
+}
+
+/* ABOUT */
+
+.about{
+max-width:800px;
+margin:auto;
+text-align:center;
+color:#cbd5f5;
+}
+
+/* SKILLS */
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.skill{
+background:#1e293b;
+padding:12px 20px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.skill:hover{
+background:#38bdf8;
+color:black;
+transform:translateY(-5px);
+}
+
+/* PROJECT */
+
+.projects{
+display:flex;
+justify-content:center;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:10px;
+max-width:400px;
+transition:0.3s;
+}
+
+.project:hover{
+transform:translateY(-10px);
+}
+
+/* CERTIFICATIONS */
+
+.cert{
+max-width:600px;
+margin:auto;
+color:#cbd5f5;
+}
+
+.cert li{
+margin:10px 0;
+}
+
+/* CONTACT */
+
+.contact{
+text-align:center;
+}
+
+.contact a{
+display:inline-block;
+margin:10px;
+color:white;
+text-decoration:none;
+padding:10px 20px;
+border:1px solid #38bdf8;
+border-radius:30px;
+transition:0.3s;
+}
+
+.contact a:hover{
+background:#38bdf8;
+color:black;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:20px;
+background:#020617;
+margin-top:40px;
+color:#94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Shivamani</h2>
+
+<div>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<section class="hero">
+
+<h1>Hi, I'm <span>Sripada Shivamani</span></h1>
+
+<p>
+B.Tech student passionate about programming, web development and data science.
+I enjoy solving problems, building projects and continuously learning new technologies.
+</p>
+
+<a class="btn" href="mailto:nikkhil2005@gmail.com">Contact Me</a>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About Me</h2>
+
+<p class="about">
+I am currently pursuing B.Tech at Vignan Institute of Technology and Science with a CGPA of 7.3.  
+My interests lie in software development, data science and building practical solutions using programming.  
+I enjoy learning new technologies and improving my problem solving skills.
+</p>
+
+</section>
+
+<section class="section" id="skills">
+
+<h2>Technical Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">Java (Basic)</div>
+<div class="skill">HTML5</div>
+<div class="skill">CSS3</div>
+<div class="skill">NumPy</div>
+<div class="skill">Pandas</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+<div class="skill">VS Code</div>
+
+</div>
+
+</section>
+
+<section class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+<h3>Personal Portfolio Website</h3>
+
+<p>
+Developed a responsive portfolio website using HTML and CSS to showcase my skills, certifications and projects. Implemented mobile responsive design and managed the project using GitHub.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2>Certifications</h2>
+
+<ul class="cert">
+
+<li>Python Certification – HackerRank</li>
+<li>SQL Basics – HackerRank</li>
+<li>SQL Course – Simplilearn</li>
+<li>DevOps Workshop – Vignan Institute</li>
+
+</ul>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Connect With Me</h2>
+
+<a href="mailto:nikkhil2005@gmail.com">Email</a>
+<a href="https://github.com/shivamani555">GitHub</a>
+<a href="https://linkedin.com/in/sripada-shivamani">LinkedIn</a>
+
+</section>
+
+<footer>
+<p>© 2026 Sripada Shivamani</p>
+</footer>
+
+</body>
+</html>
